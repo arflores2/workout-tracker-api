@@ -8,6 +8,7 @@ var schema = buildSchema(`
   }
 
   type Workout {
+    id: ID
     name: String
     date: String
     blocks: [Block]
@@ -50,4 +51,4 @@ app.post('/graphql', graphqlHTTP({
   graphiql: false,
 }));
 
-app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));
+app.listen(3000, () => console.log('Now browse to localhost:4000/graphql'));
